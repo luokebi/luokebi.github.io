@@ -1,8 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta name="google-site-verification" content="j-aaaSxILb3GBHidLx_oPvKK_xtIfiYE4cJRBnw2wH4" />
-  <meta name="baidu-site-verification" content="Hyfh5EEKyG" />
   <meta charset="utf-8">
   
   <title>jQuery插件学习 | LUO's 博客</title>
@@ -59,11 +57,10 @@ console.log(arr.removeDuplicates()); // [&quot;apple&quot;,&quot;pair&quot;,&quo
     <meta property="og:image" content="undefined"/>
   
 
-  <link href="/favicon.ico" rel="icon">
+  <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="LUO's 博客" type="application/atom+xml">
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
   
 </head>
 
@@ -140,8 +137,7 @@ console.log(arr.removeDuplicates()); // [&quot;apple&quot;,&quot;pair&quot;,&quo
 console.log(arr.removeDuplicates()); <span class="comment">// ["apple","pair","grape"]</span>
 </pre></td></tr></table></figure>
 
-<p>而<code>jQuery.fn</code>是<code>jQuery.prototype</code>的简写，所以我们用<code>jQuery.fn.pluginName = function</code>来创造一个jQuery插件：
-<a name="more"></a></p>
+<p>而<code>jQuery.fn</code>是<code>jQuery.prototype</code>的简写，所以我们用<code>jQuery.fn.pluginName = function</code>来创造一个jQuery插件：<br><a id="more"></a></p>
 <figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -266,10 +262,9 @@ console.log(arr.removeDuplicates()); <span class="comment">// ["apple","pair","g
 })(jQuery);
 </pre></td></tr></table></figure>
 
-<p>这样就是实现了传入配置。这里可以看到我们把<code>var defaultOption = {...}</code>写在了<code>$.fn.puginName = function(){}</code>的外面，这是为了让插件更高效，节约内存，把一次性的代码放在主循环之外。想了解更多关于jquery插件的优化可以看看这篇文章<a href="http://www.websanova.com/blog/jquery/10-coding-tips-to-write-superior-jquery-plugins#.Ufe-WY0ybEI">10 Coding Tips to Write Superior jQuery Plugins</a>。</p>
+<p>这样就是实现了传入配置。这里可以看到我们把<code>var defaultOption = {...}</code>写在了<code>$.fn.puginName = function(){}</code>的外面，这是为了让插件更高效，节约内存，把一次性的代码放在主循环之外。想了解更多关于jquery插件的优化可以看看这篇文章<a href="http://www.websanova.com/blog/jquery/10-coding-tips-to-write-superior-jquery-plugins#.Ufe-WY0ybEI" target="_blank">10 Coding Tips to Write Superior jQuery Plugins</a>。</p>
 <h2>有公有方法和私有方法的写法:</h2>
-<p>有些时候我们需要一些函数被插件外的代码调用；一些函数却不能让外部的代码可以访问。这也就是我们说的公有方法和私有方法。
-一般我们在插件中定义的函数外部都是访问不了的，所以我们要将一些暴露出去。实现这个这里有两种方法：</p>
+<p>有些时候我们需要一些函数被插件外的代码调用；一些函数却不能让外部的代码可以访问。这也就是我们说的公有方法和私有方法。<br>一般我们在插件中定义的函数外部都是访问不了的，所以我们要将一些暴露出去。实现这个这里有两种方法：</p>
 <p>方法一：我们用一个对象来存储公有函数：</p>
 <figure class="highlight lang-js"><table><tr><td class="gutter"><pre>1
 2
@@ -479,10 +474,16 @@ $(<span class="string">'selector'</span>).pluginName.publicFunction2(); <span cl
         
   <div class="addthis addthis_toolbox addthis_default_style">
     
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
     
     
       <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
     
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
     
     <a class="addthis_counter addthis_pill_style"></a>
   </div>
@@ -517,8 +518,6 @@ $(<span class="string">'selector'</span>).pluginName.publicFunction2(); <span cl
   <h3 class="title">标签</h3>
   <ul class="entry">
   
-    <li><a href="/tags/hellp-world/">hellp world</a><small>1</small></li>
-  
     <li><a href="/tags/jQuery/">jQuery</a><small>1</small></li>
   
     <li><a href="/tags/javascript/">javascript</a><small>2</small></li>
@@ -537,7 +536,8 @@ $(<span class="string">'selector'</span>).pluginName.publicFunction2(); <span cl
   
 </div>
 <div class="clearfix"></div></footer>
-  <script src="/js/jquery.imagesloaded.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
 
