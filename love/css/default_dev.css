@@ -31,8 +31,8 @@ body {
 
 #words {
 	font-family: "sans-serif";
+	font-size: 28px;
 	width: 500px;
-	font-size: 24px;
 	color:#666;
 }
 
@@ -47,17 +47,23 @@ body {
 
 #loveu{
 	padding: 5px;
-	font-size: 22px;
+	font-size: 32px;
+	text-align: center;
+	display: none;
+}
+
+#loveu2 {
+	padding: 5px;
+	font-size: 26px;
 	margin-top: 80px;
-	margin-right: 120px;
+	margin-right: 83px;
 	text-align: right;
 	display: none;
 }
 
-#loveu .signature{
+#loveu2 .signature{
 	margin-top: 10px;
 	font-size: 20px;
-	font-style: italic;
 }
 
 #clickSound{
@@ -99,6 +105,8 @@ body {
 	text-align: center;
 	width:100%;
 	color:#666;
+	font-size: 26px;
+	display: none;
 }
 
 #errorMsg{
@@ -112,4 +120,5 @@ body {
 
 #copyright a{
 	color:#666;
+
 }
