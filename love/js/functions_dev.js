@@ -132,7 +132,7 @@ function adjustCodePosition() {
 }
 
 function showLoveU2() {
-	$('#loveu2').fadeIn(2000, function() {
+	$('#loveu2').fadeIn(1000, function() {
 		$('#copyright').fadeIn();
 	});
 }
