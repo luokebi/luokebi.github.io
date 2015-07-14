@@ -1,0 +1,112 @@
+{
+    "title": {
+            "media": {
+                "caption":  "",
+                "credit":   "",
+                "url":      "url_to_your_media.jpg",
+                "thumb":    "url_to_your_media.jpg"
+            },
+            "text": {
+                "headline": "Headline Goes Here111",
+                "text":     "Your slide text goes here."
+            }
+    },
+    "events": [
+        {
+            "start_date": {
+                "year":         "2015",
+                "month":        "01",
+                "day":          "08",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+                    "end_date": {
+                "year":         "2015",
+                "month":        "01",
+                "day":          "08",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption":  "",
+                "credit":   "",
+                "url":      "url_to_your_media.jpg",
+                "thumb":    "url_to_your_media.jpg"
+            },
+            "text": {
+                "headline": "Headline Goes Here",
+                "text":     "Your slide text goes here."
+            }
+        },
+
+        {
+            "start_date": {
+                "year":         "2015",
+                "month":        "01",
+                "day":          "09",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+                    "end_date": {
+                "year":         "2015",
+                "month":        "01",
+                "day":          "09",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption":  "",
+                "credit":   "",
+                "url":      "./images/sugar.jpg"
+            },
+            "text": {
+                "headline": "Headline Goes Here",
+                "text":     "send me the sugar."
+            }
+        },
+
+        {
+            "start_date": {
+                "year":         "2015",
+                "month":        "01",
+                "day":          "11",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+                    "end_date": {
+                "year":         "2015",
+                "month":        "01",
+                "day":          "11",
+                "hour":         "",
+                "minute":       "",
+                "second":       "",
+                "millisecond":  "",
+                "format":       ""
+            },
+            "media": {
+                "caption":  "",
+                "credit":   "",
+                "url": "./images/sugar.jpg"
+            },
+            "text": {
+                "headline": "Headline Goes Here",
+                "text":     "这是我第一次送你去上班，下班之后我们第一次两个人去吃饭看电影，本来这天我们下午没决定要去吃饭看电影，结果最后还是去了，也许是你为了感谢我接送你上班。也不知道你喜欢吃什么，由于赶着看电影，就吃了个雷门拉面，《智取威虎山》虽然好评如潮，但我们都觉得没什么惊喜，我们的第一次电影就在这平淡中结束了。"
+            }
+        }
+    ]
+}
