@@ -101,7 +101,7 @@
             "media": {
                 "caption":  "",
                 "credit":   "",
-                "url": "./images/sugar.jpg"
+                "url": "<iframe src='http://luokebi.github.io/love'></iframe>"
             },
             "text": {
                 "headline": "Headline Goes Here",

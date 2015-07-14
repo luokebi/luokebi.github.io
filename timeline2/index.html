@@ -9,15 +9,21 @@
 <link rel="stylesheet" href="css/timeline.css">
 
 <style>
-  html, body {
-  height:100%;
-  padding: 0px;
-  margin: 0px;
-  }
+html, body {
+     height:100%;
+     width:100%;
+     padding: 0px;
+     margin: 0px;
+    }
 
   #my-timeline { height: 100%; }
 </style>
 <script type="text/javascript" src="./js/timeline.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML elements-->
+    <!--if lt IE 9
+    script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+    -->
 </head>
 <body>
   <div id="my-timeline"></div>
@@ -25,6 +31,7 @@
 var options = {
   language:"zh-cn",
   timenav_height: 80,
+  scale_factor: 1
 };
 var timeline = new VCO.Timeline('my-timeline', 'content.json', options);
   window.onresize = function(event) {
