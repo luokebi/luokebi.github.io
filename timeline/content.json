@@ -27,10 +27,10 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/sugar.jpg",
                     "thumbnail":"",
-                    "credit":"luo",
-                    "caption":"什么"
+                    "credit":"",
+                    "caption":""
                 }
             },
 
@@ -55,7 +55,7 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/xba.jpg",
                     "thumbnail":""
                 }
             },
@@ -81,7 +81,7 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/mh.jpg",
                     "thumbnail":""
                 }
             },
@@ -146,7 +146,7 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/cx.jpg",
                     "thumbnail":""
                 }
             },
@@ -159,7 +159,7 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/xc2.jpg",
                     "thumbnail":""
                 }
             },
@@ -185,7 +185,7 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/Tgl.jpg",
                     "thumbnail":""
                 }
             },
@@ -211,7 +211,7 @@
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/srlw.jpg",
                     "thumbnail":""
                 }
             },
