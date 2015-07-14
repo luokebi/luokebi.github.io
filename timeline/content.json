@@ -139,6 +139,19 @@
             },
 
             {
+                "startDate":"2015,02,16",
+                "endDate":"2015,02,16",
+                "headline":"。。。",
+                "text":"<p>今天是小学同学会，你由于单位上吃饭没有来吃饭，但是在唱歌的时候你来了。好吧，给你表白的又来了，我在旁边听着也是很醉，后来你说没办法，就是这么万人迷。</p>",
+                "tag":"",
+                "classname":"",
+                "asset": {
+                    "media":"./images/txh.jpg",
+                    "thumbnail":""
+                }
+            },
+
+            {
                 "startDate":"2015,02,18",
                 "endDate":"2015,02,18",
                 "headline":"。。。",
@@ -259,11 +272,11 @@
                 "startDate":"2015,03,25",
                 "endDate":"2015,03,25",
                 "headline":"。。。",
-                "text":"<p>今天是我们第一次遛狗，我都忘记了那天发生了些什么，八筒应该是狠狠的扑了我一下，然后感觉到力气真的很大。。。。还记得我画的那个画吗，翻译成中文就是'我想牵你的手'。。。</p>",
+                "text":"<p>今天是我们第一次遛狗，我都忘记了那天发生了些什么，八筒应该是狠狠的扑了我一下，然后感觉到力气真的很大。。。。还记得我画的这个画吗，翻译成中文就是'我想牵你的手'。。。</p>",
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/lg.jpg",
                     "thumbnail":""
                 }
             },
@@ -277,6 +290,19 @@
                 "classname":"",
                 "asset": {
                     "media":"",
+                    "thumbnail":""
+                }
+            },
+
+            {
+                "startDate":"2015,04,03",
+                "endDate":"2015,04,03",
+                "headline":"。。。",
+                "text":"<p>sdfsdf</p>",
+                "tag":"",
+                "classname":"",
+                "asset": {
+                    "media":"< iframe width='400' height='266' src='http://luokebi.github.io/love' frameborder='0' scrolling='no' allowtransparency='true' style='background-color:transparent;'>< /iframe >",
                     "thumbnail":""
                 }
             }
