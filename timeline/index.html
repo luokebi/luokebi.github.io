@@ -18,7 +18,21 @@
                     embed_id:   'my-timeline',
                     lang: 'zh-cn'
                 });
+
+
+
+
             });
+
+            function addAudio() {
+              var audio = document.createElement('AUDIO');
+
+              audio.src = 'media/hnzyq.mp3';
+
+              document.body.appendChild(audio);
+
+              audio.play();
+            }
         </script>
     <!-- Style-->
     <style>
@@ -33,6 +47,6 @@
 </head>
 <body>
   <div id="my-timeline"></div>
-
+  <audio id="bg-music" preload src="media/hnzyq.mp3"></audio>
 </body>
 </html>
