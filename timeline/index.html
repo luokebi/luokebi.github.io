@@ -9,6 +9,7 @@
 <script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="./js/storyjs-embed.js"></script>
 <script>
+
             $(document).ready(function() {
                 createStoryJS({
                     type:       'timeline',
@@ -18,22 +19,27 @@
                     embed_id:   'my-timeline',
                     lang: 'zh-cn'
                 });
-
+                var added = false;
                 $(document).on('click tap touchstart', function() {
-                  var audio = $('#bg-music')[0];
-                  if (audio.paused) {
-                    audio.play();
+                  //var audio = $('#bg-music')[0];
+                  //if (audio.paused) {
+                    //audio.play();
+                  //}
+                  if (!added) {
+                    addAudio();
+                    added = true;
                   }
+                  
                 });
 
 
             });
 
             function addAudio() {
-              var audio = document.createElement('AUDIO');
-              audio.src = 'media/hnzyq.mp3';
+              var audio = document.createElement('DIV');
+              audio.innerHTML = '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=141664&auto=1&height=66"></iframe>';
+              audio.style.display = 'none';
               document.body.appendChild(audio);
-              audio.play();
             }
         </script>
     <!-- Style-->
@@ -49,10 +55,11 @@
 </head>
 <body>
   <div id="my-timeline"></div>
-  <audio id="bg-music" preload loop>
-    <!-- <source src="media/hnzyq.ogg" type="audio/ogg"> -->
+  <!-- <audio id="bg-music" preload loop>
+    <source src="media/hnzyq.ogg" type="audio/ogg">
     <source src="media/hnzyq.wma" type="audio/wma">
     <source src="media/hnzyq.mp3" type="audio/mp3">
-  </audio>
+  </audio> -->
+  
 </body>
 </html>
