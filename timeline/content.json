@@ -554,14 +554,27 @@
             },
 
             {
-                "startDate":"2015,08,14",
-                "endDate":"2015,08,14",
+                "startDate":"2015,08,12",
+                "endDate":"2015,08,12",
+                "headline":"糖2",
+                "text":"<p>今天你们去德阳烧香，你终于把你答应要给我的糖给我拿回来了，一样的糖，但这个时候的你我和那个时候已经不一样了。。。</p>",
+                "tag":"",
+                "classname":"",
+                "asset": {
+                    "media":"./images/st2.jpg",
+                    "thumbnail":""
+                }
+            },
+
+            {
+                "startDate":"2015,08,13",
+                "endDate":"2015,08,13",
                 "headline":"狮子",
                 "text":"<p>今天又说到狮子，相信我，我真的没有放弃过，一有机会我一定会把它带到你的身边。。。</p>",
                 "tag":"",
                 "classname":"",
                 "asset": {
-                    "media":"",
+                    "media":"./images/sz.jpg",
                     "thumbnail":""
                 }
             },

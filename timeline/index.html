@@ -21,15 +21,11 @@
                 });
                 var added = false;
                 $(document).on('click tap touchstart', function() {
-                  //var audio = $('#bg-music')[0];
-                  //if (audio.paused) {
-                    //audio.play();
-                  //}
-                  if (!added) {
-                    addAudio();
-                    added = true;
+                  var audio = $('#bg-music')[0];
+                  if (audio.paused) {
+                    audio.play();
                   }
-                  
+                                   
                 });
 
 
@@ -56,12 +52,9 @@
 </head>
 <body>
   <div id="my-timeline"></div>
-  <!-- <audio id="bg-music" preload loop>
-    <source src="media/hnzyq.ogg" type="audio/ogg">
-    <source src="media/hnzyq.wma" type="audio/wma">
-    <source src="media/hnzyq.mp3" type="audio/mp3">
-  </audio> -->
-  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="http://music.163.com/outchain/player?type=2&id=141664&auto=1&height=66"></iframe>
+  <audio id="bg-music" preload loop>
+    <source src="http://bcs.duapp.com/test-luo-123/hnzyq.mp3" type="audio/mp3">
+  </audio>
   
 </body>
 </html>
