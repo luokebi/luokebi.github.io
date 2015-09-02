@@ -1,0 +1,25 @@
+.template {
+	display: none;
+}
+
+.topic-item {
+	padding: 30px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: none;
+}
+
+.topic-item .alert{
+	display: none;
+}
+
+.anwser-action.wrong .alert-danger{
+	display: block;
+}
+
+.anwser-action.right .alert-success{
+	display: block;
+}
+
+

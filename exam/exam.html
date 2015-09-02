@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <title>选择一套试题</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="template" id="single-topic-template">
+        <div class="topic-item single" data-index="#{INDEX}">
+            <div class="clearfix" style="margin-bottom: 20px;">
+                <a class="btn btn-success btn-lg pull-right next-topic" href="#" role="button">下一题</a>
+                <a class="btn btn-success btn-lg pull-left prev-topic" href="#" role="button">上一题</a>
+            </div>
+            <h4>#{CONTENT}</h4>
+            <ul class="list-group">
+                <li class="list-group-item" data-value="A">
+                    A. #{A}
+                </li>
+                <li class="list-group-item" data-value="B">
+                    B. #{B}
+                </li>
+                <li class="list-group-item" data-value="C">
+                    C. #{C}
+                </li>
+                <li class="list-group-item" data-value="D">
+                    D. #{D}
+                </li>
+            </ul>
+            <div class="anwser-action">
+                <div class="alert alert-danger pull-left" role="alert">错误！正确答案: #{ANWSER}</div>
+                <div class="alert alert-success pull-left" role="alert">正确！正确答案: #{ANWSER}</div>
+                <a class="btn btn-primary btn-lg pull-right test-anwser" href="#" role="button">确定</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="template" id="multiple-topic-template">
+        <div class="topic-item multiple" data-index="#{INDEX}">
+            <div class="clearfix" style="margin-bottom: 20px;">
+                <a class="btn btn-success btn-lg pull-right next-topic" href="#" role="button">下一题</a>
+                <a class="btn btn-success btn-lg pull-left prev-topic" href="#" role="button">上一题</a>
+            </div>
+            <h4>(多选) #{CONTENT}</h4>
+            <ul class="list-group">
+                <li class="list-group-item" data-value="A">
+                    A. #{A}
+                </li>
+                <li class="list-group-item" data-value="B">
+                    B. #{B}
+                </li>
+                <li class="list-group-item" data-value="C">
+                    C. #{C}
+                </li>
+                <li class="list-group-item" data-value="D">
+                    D. #{D}
+                </li>
+            </ul>
+            <div class="anwser-action">
+                <div class="alert alert-danger pull-left" role="alert">错误！正确答案: #{ANWSER}</div>
+                <div class="alert alert-success pull-left" role="alert">正确！正确答案: #{ANWSER}</div>
+                <a class="btn btn-primary btn-lg pull-right test-anwser" href="#" role="button">确定</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="template" id="single2-topic-template">
+        <div class="topic-item single2" data-index="#{INDEX}">
+            <div class="clearfix" style="margin-bottom: 20px;">
+                <a class="btn btn-success btn-lg pull-right next-topic" href="#" role="button">下一题</a>
+                <a class="btn btn-success btn-lg pull-left prev-topic" href="#" role="button">上一题</a>
+            </div>
+            <h4>#{CONTENT}</h4>
+            <ul class="list-group">
+                <li class="list-group-item" data-value="A">
+                    A. 正确
+                </li>
+                <li class="list-group-item" data-value="B">
+                    B. 错误
+                </li>
+            </ul>
+            <div class="anwser-action">
+                <div class="alert alert-danger pull-left" role="alert">错误！正确答案: #{ANWSER}</div>
+                <div class="alert alert-success pull-left" role="alert">正确！正确答案: #{ANWSER}</div>
+                <a class="btn btn-primary btn-lg pull-right test-anwser" href="#" role="button">确定</a>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="topic-container">
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/exam.js"></script>
+</body>
+
+</html>
