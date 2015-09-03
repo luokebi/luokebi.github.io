@@ -92,6 +92,10 @@ function buildTests(data) {
             	item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
             }
 
+            if (tests[i].F) {
+                item.find('.list-group').append('<li class="list-group-item" data-value="F">F. ' + tests[i].F + '</li>');
+            }
+
             item.attr('data-anwser', tests[i].anwser);
 
 
