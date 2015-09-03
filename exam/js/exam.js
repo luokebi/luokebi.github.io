@@ -1,4 +1,9 @@
-var testName = window.location.search.match(/list_name=(.*)$/)[1];
+var testName = window.location.search.match(/list_name=(.*)&/)[1];
+var testDisplayName = decodeURIComponent(window.location.search.match(/display_name=(.*)$/)[1]);
+
+$('title').text(testDisplayName);
+
+$('#currentPage').text(testDisplayName);
 
 function getTemplate(id) {
     return $("#" + id).html();
@@ -46,7 +51,11 @@ function buildTests(data) {
                 e.preventDefault();
                 var _anwser = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
                 var anwser = $(this).parents('.topic-item').attr('data-anwser');
-                console.log(_anwser, anwser);
+                console.log(_anwser);
+                if (!_anwser) {
+                	alert("请选择答案！")
+                	return;
+                }
                 if (_anwser == anwser) {
                     $(this).parents('.topic-item').find('.anwser-action').removeClass('wrong').addClass('right');
 
@@ -79,6 +88,9 @@ function buildTests(data) {
                 anwser: tests[i].anwser,
                 index: i + ""
             }));
+            if (tests[i].E) {
+            	item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
+            }
 
             item.attr('data-anwser', tests[i].anwser);
 
@@ -97,7 +109,10 @@ function buildTests(data) {
 
                 var _anwser = _anwsers.join('').trim();
                 var anwser = $(this).parents('.topic-item').attr('data-anwser');
-                console.log(_anwser, anwser);
+                if (!_anwser) {
+                	alert("请选择答案！")
+                	return;
+                }
                 if (_anwser == anwser) {
                     $(this).parents('.topic-item').find('.anwser-action').removeClass('wrong').addClass('right');
 
@@ -136,7 +151,10 @@ function buildTests(data) {
                 e.preventDefault();
                 var _anwser = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
                 var anwser = $(this).parents('.topic-item').attr('data-anwser');
-                console.log(_anwser, anwser);
+                if (!_anwser) {
+                	alert("请选择答案！")
+                	return;
+                }
                 if (_anwser == anwser) {
                     $(this).parents('.topic-item').find('.anwser-action').removeClass('wrong').addClass('right');
 

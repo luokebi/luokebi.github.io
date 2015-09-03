@@ -3,7 +3,7 @@
 }
 
 .topic-item {
-	padding: 30px;
+	padding: 10px 30px 30px 30px;
 	position: absolute;
 	left: 0;
 	right: 0;
@@ -20,6 +20,9 @@
 
 .anwser-action.right .alert-success{
 	display: block;
+}
+.tests-nav {
+	margin-bottom: 0;
 }
 
 
