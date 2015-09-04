@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+		.anwser-item {
+			float: left;
+			margin-right: 20px;
+			margin-bottom: 3px;
+			cursor: pointer;
+			padding: 2px 5px;
+			font-size: 16px;
+			border-radius: 2px;
+			font-weight: bold;
+		}
+
+		.anwser-item.red {
+			background: red;
+			color: white;
+		}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<h3>输入</h3>
+		<form action="">
+			<div class="form-group">
+				<textarea name="" id="anwser-input" class="form-control" cols="30" rows="10"></textarea>
+			</div>
+			<button class="btn btn-primary btn-lg" id="parse-btn">解析</button>
+		</form>
+		<h3>输出</h3>
+		<div class="" id="output">
+			
+		</div>
+	</div>
+	<script type="text/javascript" src="js/parse.js"></script>
+</body>
+</html>
