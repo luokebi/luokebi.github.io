@@ -7,13 +7,13 @@ function generateJson() {
 	var _content = $('#test-input').val().replace(/\n+|\r+|\s+/g,'');
 
 	var content = _content.split(/A\./)[0];
-	var anwser = _content.match(/[（|()]([A-D]+)[）|\)]/)[1];
+	var answer = _content.match(/[（|()]([A-D]+)[）|\)]/)[1];
 	var type = $('#type-select').val();
 	if (type == 'single2') {
 		var obj = {
 			type: 'single2',
 			content: content,
-			answer: anwser
+			answer: answer
 		};
 	} else {
 		var A = _content.match(/A\.(.*)B\./)[1];
@@ -28,7 +28,7 @@ function generateJson() {
 		    B: B,
 		    C: C,
 		    D: D,
-		    answer: anwser
+		    answer: answer
 		};
 
 	}

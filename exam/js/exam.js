@@ -36,31 +36,31 @@ function buildTests(data) {
                 b: tests[i].B,
                 c: tests[i].C,
                 d: tests[i].D,
-                anwser: tests[i].anwser,
+                answer: tests[i].answer,
                 index: i + ""
             }));
 
-            item.attr('data-anwser', tests[i].anwser);
+            item.attr('data-answer', tests[i].answer);
 
 
             item.find('.list-group-item').on('click', function() {
                 $(this).siblings().removeClass('active').end().addClass('active');
             });
 
-            item.find('.test-anwser').on('click', function(e) {
+            item.find('.test-answer').on('click', function(e) {
                 e.preventDefault();
-                var _anwser = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
-                var anwser = $(this).parents('.topic-item').attr('data-anwser');
-                console.log(_anwser);
-                if (!_anwser) {
+                var _answer = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
+                var answer = $(this).parents('.topic-item').attr('data-answer');
+                console.log(_answer);
+                if (!_answer) {
                 	alert("请选择答案！")
                 	return;
                 }
-                if (_anwser == anwser) {
-                    $(this).parents('.topic-item').find('.anwser-action').removeClass('wrong').addClass('right');
+                if (_answer == answer) {
+                    $(this).parents('.topic-item').find('.answer-action').removeClass('wrong').addClass('right');
 
                 } else {
-                    $(this).parents('.topic-item').find('.anwser-action').removeClass('right').addClass('wrong');
+                    $(this).parents('.topic-item').find('.answer-action').removeClass('right').addClass('wrong');
                 }
             });
 
@@ -85,7 +85,7 @@ function buildTests(data) {
                 b: tests[i].B,
                 c: tests[i].C,
                 d: tests[i].D,
-                anwser: tests[i].anwser,
+                answer: tests[i].answer,
                 index: i + ""
             }));
             if (tests[i].E) {
@@ -96,32 +96,32 @@ function buildTests(data) {
                 item.find('.list-group').append('<li class="list-group-item" data-value="F">F. ' + tests[i].F + '</li>');
             }
 
-            item.attr('data-anwser', tests[i].anwser);
+            item.attr('data-answer', tests[i].answer);
 
 
             item.find('.list-group-item').on('click', function() {
                 $(this).toggleClass('active');
             });
 
-            item.find('.test-anwser').on('click', function(e) {
+            item.find('.test-answer').on('click', function(e) {
                 e.preventDefault();
-                var _anwsers = [];
+                var _answers = [];
 
                 $(this).parents('.topic-item').find('.list-group-item.active').each(function() {
-                	_anwsers.push($(this).attr('data-value'));
+                	_answers.push($(this).attr('data-value'));
                 });
 
-                var _anwser = _anwsers.join('').trim();
-                var anwser = $(this).parents('.topic-item').attr('data-anwser');
-                if (!_anwser) {
+                var _answer = _answers.join('').trim();
+                var answer = $(this).parents('.topic-item').attr('data-answer');
+                if (!_answer) {
                 	alert("请选择答案！")
                 	return;
                 }
-                if (_anwser == anwser) {
-                    $(this).parents('.topic-item').find('.anwser-action').removeClass('wrong').addClass('right');
+                if (_answer == answer) {
+                    $(this).parents('.topic-item').find('.answer-action').removeClass('wrong').addClass('right');
 
                 } else {
-                    $(this).parents('.topic-item').find('.anwser-action').removeClass('right').addClass('wrong');
+                    $(this).parents('.topic-item').find('.answer-action').removeClass('right').addClass('wrong');
                 }
             });
 
@@ -140,30 +140,30 @@ function buildTests(data) {
         } else if (type == 'single2') {
             var item = $(tmpl(SINGLE2, {
                 content: tests[i].content,
-                anwser: tests[i].anwser,
+                answer: tests[i].answer,
                 index: i + ""
             }));
 
-            item.attr('data-anwser', tests[i].anwser);
+            item.attr('data-answer', tests[i].answer);
 
 
             item.find('.list-group-item').on('click', function() {
                 $(this).siblings().removeClass('active').end().addClass('active');
             });
 
-            item.find('.test-anwser').on('click', function(e) {
+            item.find('.test-answer').on('click', function(e) {
                 e.preventDefault();
-                var _anwser = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
-                var anwser = $(this).parents('.topic-item').attr('data-anwser');
-                if (!_anwser) {
+                var _answer = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
+                var answer = $(this).parents('.topic-item').attr('data-answer');
+                if (!_answer) {
                 	alert("请选择答案！")
                 	return;
                 }
-                if (_anwser == anwser) {
-                    $(this).parents('.topic-item').find('.anwser-action').removeClass('wrong').addClass('right');
+                if (_answer == answer) {
+                    $(this).parents('.topic-item').find('.answer-action').removeClass('wrong').addClass('right');
 
                 } else {
-                    $(this).parents('.topic-item').find('.anwser-action').removeClass('right').addClass('wrong');
+                    $(this).parents('.topic-item').find('.answer-action').removeClass('right').addClass('wrong');
                 }
             });
 

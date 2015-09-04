@@ -14,11 +14,11 @@
 	display: none;
 }
 
-.anwser-action.wrong .alert-danger{
+.answer-action.wrong .alert-danger{
 	display: block;
 }
 
-.anwser-action.right .alert-success{
+.answer-action.right .alert-success{
 	display: block;
 }
 .tests-nav {
