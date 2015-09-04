@@ -23,6 +23,11 @@
 			background: red;
 			color: white;
 		}
+
+		#wrong-num {
+			font-weight: bold;
+			color: red;
+		}
     </style>
 </head>
 <body>
@@ -30,11 +35,12 @@
 		<h3>输入</h3>
 		<form action="">
 			<div class="form-group">
-				<textarea name="" id="anwser-input" class="form-control" cols="30" rows="10"></textarea>
+				<textarea name="" id="anwser-input" class="form-control" cols="30" rows="5"></textarea>
 			</div>
 			<button class="btn btn-primary btn-lg" id="parse-btn">解析</button>
 		</form>
 		<h3>输出</h3>
+		<div id="wrong-num"></div>
 		<div class="" id="output">
 			
 		</div>

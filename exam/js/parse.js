@@ -5,6 +5,7 @@ $('#parse-btn').on('click', function(e) {
 
 $('#output').on('click', '.anwser-item', function() {
 	$(this).toggleClass('red');
+	updateWrongNum();
 });
 
 
@@ -45,4 +46,9 @@ function parseAnwser() {
 	$('#output').html(str);
 
 
+}
+
+
+function updateWrongNum() {
+	$('#wrong-num').text($('.anwser-item.red').length);
 }
