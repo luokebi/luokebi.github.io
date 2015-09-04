@@ -22,7 +22,15 @@
 			"name": "test3",
 			"display_name": "第3套题错题",
 			"count": "15"
+		},
+
+		{
+			"name": "test6",
+			"display_name": "第6套题错题",
+			"count": "15"
 		}
+
+
 
 	]
 }
