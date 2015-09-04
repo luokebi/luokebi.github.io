@@ -1,28 +1,72 @@
 .template {
-	display: none;
+    display: none;
 }
 
 .topic-item {
-	padding: 10px 30px 30px 30px;
-	position: absolute;
-	left: 0;
-	right: 0;
-	display: none;
+    padding: 10px 30px 30px 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
 }
 
-.topic-item .alert{
-	display: none;
+.topic-item .alert {
+    display: none;
 }
 
-.answer-action.wrong .alert-danger{
-	display: block;
+.answer-action.wrong .alert-danger {
+    display: block;
 }
 
-.answer-action.right .alert-success{
-	display: block;
+.answer-action.right .alert-success {
+    display: block;
 }
+
 .tests-nav {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
+.loading-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 999;
+}
 
+.dog {
+    width: 124px;
+    height: 224px;
+    position: absolute;
+    top: 120px;
+    left: 0px;
+}
+
+.msg {
+    height: 115px;
+    width: 135px;
+    position: absolute;
+    top: 89px;
+    left: 137px
+}
+
+.center {
+    margin: 0 auto;
+    width: 275px;
+    height: 256px;
+    position: relative;
+}
+
+.center .btn {
+    position: absolute;
+    top: 397px;
+    left: 74px;
+}
+
+.loading-btn {
+    position: absolute;
+    top: 500px;
+    right: 100px;
+}
