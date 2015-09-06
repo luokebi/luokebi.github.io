@@ -7,7 +7,7 @@ function generateJson() {
 	var _content = $('#test-input').val().replace(/\n+|\r+|\s+/g,'');
 
 	var content = _content.split(/A\./)[0];
-	var answer = _content.match(/[（|()]([A-D]+)[）|\)]/)[1];
+	var answer = _content.match(/[（|()]([A-F]+)[）|\)]/)[1];
 	var type = $('#type-select').val();
 	if (type == 'single2') {
 		var obj = {

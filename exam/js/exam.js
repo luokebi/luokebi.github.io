@@ -16,7 +16,7 @@ var SINGLE2 = getTemplate('single2-topic-template');
 
 
 function switchTopic(index) {
-	console.log(index);
+    console.log(index);
     $('.topic-item').hide();
     $('.topic-item[data-index="' + index + '"]').fadeIn();
 }
@@ -25,20 +25,37 @@ function buildTests(data) {
     var tests = data.topics;
 
     var length = tests.length;
+    console.log(length);
 
     for (var i = 0, n = tests.length; i < n; i++) {
         var type = tests[i].type;
 
         if (type == 'single') {
-            var item = $(tmpl(SINGLE, {
-                content: tests[i].content,
-                a: tests[i].A,
-                b: tests[i].B,
-                c: tests[i].C,
-                d: tests[i].D,
-                answer: tests[i].answer,
-                index: i + ""
-            }));
+            if (!tests[i].D) {
+                var item = $(tmpl(SINGLE, {
+                    content: tests[i].content,
+                    a: tests[i].A,
+                    b: tests[i].B,
+                    c: tests[i].C,
+                    answer: tests[i].answer,
+                    index: i + ""
+                }));
+            } else {
+                var item = $(tmpl(SINGLE, {
+                    content: tests[i].content,
+                    a: tests[i].A,
+                    b: tests[i].B,
+                    c: tests[i].C,
+                    d: tests[i].D,
+                    answer: tests[i].answer,
+                    index: i + ""
+                }));
+            }
+
+            if (!tests[i].D) {
+                item.find('.list-group-item[data-value="D"]').remove();
+            }
+
 
             item.attr('data-answer', tests[i].answer);
 
@@ -53,8 +70,8 @@ function buildTests(data) {
                 var answer = $(this).parents('.topic-item').attr('data-answer');
                 console.log(_answer);
                 if (!_answer) {
-                	alert("请选择答案！")
-                	return;
+                    alert("请选择答案！")
+                    return;
                 }
                 if (_answer == answer) {
                     $(this).parents('.topic-item').find('.answer-action').removeClass('wrong').addClass('right');
@@ -79,7 +96,7 @@ function buildTests(data) {
 
         } else if (type == 'multiple') {
 
-        	var item = $(tmpl(MULTIPLE, {
+            var item = $(tmpl(MULTIPLE, {
                 content: tests[i].content,
                 a: tests[i].A,
                 b: tests[i].B,
@@ -89,7 +106,7 @@ function buildTests(data) {
                 index: i + ""
             }));
             if (tests[i].E) {
-            	item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
+                item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
             }
 
             if (tests[i].F) {
@@ -108,14 +125,14 @@ function buildTests(data) {
                 var _answers = [];
 
                 $(this).parents('.topic-item').find('.list-group-item.active').each(function() {
-                	_answers.push($(this).attr('data-value'));
+                    _answers.push($(this).attr('data-value'));
                 });
 
                 var _answer = _answers.join('').trim();
                 var answer = $(this).parents('.topic-item').attr('data-answer');
                 if (!_answer) {
-                	alert("请选择答案！")
-                	return;
+                    alert("请选择答案！")
+                    return;
                 }
                 if (_answer == answer) {
                     $(this).parents('.topic-item').find('.answer-action').removeClass('wrong').addClass('right');
@@ -156,8 +173,8 @@ function buildTests(data) {
                 var _answer = $(this).parents('.topic-item').find('.list-group-item.active').attr('data-value');
                 var answer = $(this).parents('.topic-item').attr('data-answer');
                 if (!_answer) {
-                	alert("请选择答案！")
-                	return;
+                    alert("请选择答案！")
+                    return;
                 }
                 if (_answer == answer) {
                     $(this).parents('.topic-item').find('.answer-action').removeClass('wrong').addClass('right');
@@ -188,7 +205,7 @@ function buildTests(data) {
             item.find('.next-topic').hide();
         }
 
-        console.log(item);
+        //console.log(item);
         if (item) {
             $('#topic-container').append(item);
         }
