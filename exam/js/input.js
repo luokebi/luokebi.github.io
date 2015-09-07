@@ -8,6 +8,7 @@ function generateJson() {
 
 	var content = _content.split(/A\./)[0];
 	var answer = _content.match(/[（|()]([A-F]+)[）|\)]/)[1];
+	content = content.replace(/[（|()]([A-F]+)[）|\)]/, '( )');
 	var type = $('#type-select').val();
 	if (type == 'single2') {
 		var obj = {
