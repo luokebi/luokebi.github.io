@@ -56,6 +56,10 @@ function buildTests(data) {
                 item.find('.list-group-item[data-value="D"]').remove();
             }
 
+            if (tests[i].E) {
+                item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
+            }
+
 
             item.attr('data-answer', tests[i].answer);
 
