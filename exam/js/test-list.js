@@ -25,4 +25,4 @@ function buildTestList(data) {
 }
 
 
-requestSource('./tests.json', buildTestList);
+requestSource('./tests/tests_list.json', buildTestList);

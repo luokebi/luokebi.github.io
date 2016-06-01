@@ -38,7 +38,8 @@ function buildTests(data) {
                     b: tests[i].B,
                     c: tests[i].C,
                     answer: tests[i].answer,
-                    index: i + ""
+                    index: i + "",
+                    explain: tests[i].explain || '无'
                 }));
             } else {
                 var item = $(tmpl(SINGLE, {
@@ -48,7 +49,8 @@ function buildTests(data) {
                     c: tests[i].C,
                     d: tests[i].D,
                     answer: tests[i].answer,
-                    index: i + ""
+                    index: i + "",
+                    explain: tests[i].explain || '无'
                 }));
             }
 
@@ -107,7 +109,8 @@ function buildTests(data) {
                 c: tests[i].C,
                 d: tests[i].D,
                 answer: tests[i].answer,
-                index: i + ""
+                index: i + "",
+                explain: tests[i].explain || '无'
             }));
             if (tests[i].E) {
                 item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
@@ -162,7 +165,8 @@ function buildTests(data) {
             var item = $(tmpl(SINGLE2, {
                 content: tests[i].content,
                 answer: tests[i].answer,
-                index: i + ""
+                index: i + "",
+                explain: tests[i].explain || '无'
             }));
 
             item.attr('data-answer', tests[i].answer);
