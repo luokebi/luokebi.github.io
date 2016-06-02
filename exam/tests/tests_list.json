@@ -4,6 +4,12 @@
 			"name": "test1",
 			"display_name": "专题组卷——单选题2",
 			"count": "100"
+		},
+
+		{
+			"name": "test2",
+			"display_name": "专题组卷——单选题1",
+			"count": "100"
 		}
 
 	]
