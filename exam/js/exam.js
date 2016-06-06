@@ -21,6 +21,28 @@ function switchTopic(index) {
     $('.topic-item[data-index="' + index + '"]').fadeIn();
 }
 
+
+$('#myModal').on('show.bs.modal', function (e) {
+    var right = [],
+        wrong = [],
+        other = [];
+
+    $('.container .topic-item').each(function(index, t) {
+        var t = $(t);
+        if (t.find('.answer-action').hasClass('right')) {
+            right.push(index + 1);
+        } else if (t.find('.answer-action').hasClass('wrong')) {
+            wrong.push(index + 1);
+        } else {
+            other.push(index + 1);
+        }
+    });
+
+    $('#right-count').find('.badge').text(right.length).end().find('.panel-body').text(right.join(','));
+    $('#wrong-count').find('.badge').text(wrong.length).end().find('.panel-body').text(wrong.join(','));
+    $('#other-count').find('.badge').text(other.length).end().find('.panel-body').text(other.join(','));
+})
+
 function buildTests(data) {
     var tests = data.topics;
 

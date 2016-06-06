@@ -70,5 +70,9 @@
     top: 500px;
     right: 100px;
 }
+
+.panel-body {
+    word-break: break-all;
+}
 .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
 .clearfloat{zoom:1}
