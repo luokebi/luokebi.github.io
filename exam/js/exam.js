@@ -76,6 +76,7 @@ function buildTests(data) {
                 }));
             }
 
+
             if (!tests[i].D) {
                 item.find('.list-group-item[data-value="D"]').remove();
             }
@@ -134,6 +135,10 @@ function buildTests(data) {
                 index: i + "",
                 explain: tests[i].explain || '无'
             }));
+           
+            if (!tests[i].D) {
+                item.find('.list-group-item[data-value="D"]').remove();
+            }
             if (tests[i].E) {
                 item.find('.list-group').append('<li class="list-group-item" data-value="E">E. ' + tests[i].E + '</li>');
             }
