@@ -22,6 +22,18 @@
 			"name": "test4",
 			"display_name": "案例分析",
 			"count": "25"
+		},
+
+		{
+			"name": "test5",
+			"display_name": "2016模拟-单选",
+			"count": "100"
+		},
+
+		{
+			"name": "test6",
+			"display_name": "2016模拟试题",
+			"count": "80"
 		}
 
 	]
