@@ -34,6 +34,25 @@
 			"name": "test6",
 			"display_name": "2016模拟试题",
 			"count": "80"
+		},
+
+		{
+			"name": "test7",
+			"display_name": "2016反假货币考试专题组卷——判断题",
+			"count": "100"
+		},
+
+
+		{
+			"name": "test8",
+			"display_name": "2016年反假货币考试专题组卷——单选题",
+			"count": "100"
+		},
+
+		{
+			"name": "test9",
+			"display_name": "2016年反假货币考试专题组卷——多选题",
+			"count": "100"
 		}
 
 	]
